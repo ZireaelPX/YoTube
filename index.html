@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YouTube</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__menu menu">
+				<button class="menu__button">
+					<span class="menu__line"></span>
+					<span class="menu__line"></span>
+					<span class="menu__line"></span>
+				</button>
+			</div>
+			<div class="menu__img">
+				<img src="img/logo.png"></img>
+			</div>
+			<div class="menu__input">
+				<input placeholder="Искать" type="search" name="search" class="menu__input-search">
+				<button type="submit" class="menu__input-button">
+					<svg class="icon icon-search" width="19" height="19">
+						<use xlink:href="img/icons/icon.svg#search"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="moblie-search">
+				<svg class="icon icon-search" width="19" height="19">
+					<use xlink:href="img/icons/icon.svg#search"></use>
+				</svg>
+			</div>
+			<div class="menu__icons">
+				<a href="#" class="menu__icons-link">
+					<svg class="icon icon-camera" width="27" height="20">
+						<use xlink:href="img/icons/icon.svg#camera"></use>
+					</svg>
+				</a>
+				<a href="#" class="menu__icons-link">
+					<svg class="icon icon-tochki" width="21" height="21">
+						<use xlink:href="img/icons/icon.svg#tochki"></use>
+					</svg>
+				</a>
+				<a href="#" class="menu__icons-link">
+					<svg class="icon icon-call" width="22" height="26">
+						<use xlink:href="img/icons/icon.svg#call"></use>
+					</svg>
+				</a>
+			</div>
+			<a href="#" class="menu__user">
+				<img src="img/avatar.jpg" alt="" class="menu__avataer">
+			</a>
+		</div>
+	</header>
+	<section class="modile-sidebar">
+		<ul class="nav-sidebar__menu">
+			<li class="nav-sidebar__item">
+				<a class="nav-sidebar__link">
+					<svg class="icon icon-home" width="20" height="20">
+						<use xlink:href="img/icons/icon.svg#home"></use>
+					</svg>
+					<span class="nav-sidebar__text">Home</span>
+				</a>
+			</li>
+			<li class="nav-sidebar__item">
+				<a class="nav-sidebar__link">
+					<svg class="icon icon-fire" width="20" height="20">
+						<use xlink:href="img/icons/icon.svg#fire"></use>
+					</svg>
+					<span class="nav-sidebar__text">Trending</span>
+				</a>
+			</li>
+			<li class="nav-sidebar__item">
+				<a class="nav-sidebar__link">
+					<svg class="icon icon-file" width="20" height="20">
+						<use xlink:href="img/icons/icon.svg#file"></use>
+					</svg>
+					<span class="nav-sidebar__text">Subscriptions</span>
+				</a>
+			</li>
+			<li class="nav-sidebar__item">
+				<a class="nav-sidebar__link">
+					<svg class="icon icon-book" width="20" height="20">
+						<use xlink:href="img/icons/icon.svg#book"></use>
+					</svg>
+					<span class="nav-sidebar__text">Library</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<main>
+		<div class="container">
+			<aside class="sidebar">
+				<nav class="sidebar__navigation nav-sidebar">
+					<ul class="nav-sidebar__menu">
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-home" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#home"></use>
+								</svg>
+								<span class="nav-sidebar__text">Home</span>
+
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-fire" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#fire"></use>
+								</svg>
+								<span class="nav-sidebar__text">Trending</span>
+
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-file" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#file"></use>
+								</svg>
+								<span class="nav-sidebar__text">Subscriptions</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav-sidebar__menu">
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-book" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#book"></use>
+								</svg>
+								<span class="nav-sidebar__text">Library</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-list" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#list"></use>
+								</svg>
+								<span class="nav-sidebar__text">History</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-clock" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#clock"></use>
+								</svg>
+								<span class="nav-sidebar__text">Watch later</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-star" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#star"></use>
+								</svg>
+								<span class="nav-sidebar__text">Favourites</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-like" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#like"></use>
+								</svg>
+								<span class="nav-sidebar__text">Liked videos</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-music" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#music"></use>
+								</svg>
+								<span class="nav-sidebar__text">Music</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-game" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#game"></use>
+								</svg>
+								<span class="nav-sidebar__text">Games</span>
+							</a>
+						</li>
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-next" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#next"></use>
+								</svg>
+								<span class="nav-sidebar__text">Show more</span>
+							</a>
+						</li>
+					</ul>
+					<h2 class="subscriptions">Subscriptions</h2>
+					<ul class="subscriptions__menu">
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/01.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Gussie Singleton
+								</span>
+							</a>
+						</li>
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/02.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Nora Francis
+								</span>
+							</a>
+						</li>
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/03.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Belle Briggs
+								</span>
+							</a>
+						</li>
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/04.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Eunice Cortez
+								</span>
+							</a>
+						</li>
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/05.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Emma Hanson
+								</span>
+							</a>
+						</li>
+						<li class="subscriptions__menu-item">
+							<a href="#" class="subscriptions__link">
+								<div class="subscriptions__img">
+									<img src="img/Authorts/06.png" alt="" srcset="">
+								</div>
+								<span class="subscriptions__text">Leah Berry
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav-sidebar__menu menu-settings">
+						<li class="nav-sidebar__item">
+							<a class="nav-sidebar__link">
+								<svg class="icon icon-settings" width="20" height="20">
+									<use xlink:href="img/icons/icon.svg#settings"></use>
+								</svg>
+								<span class="nav-sidebar__text">Setting</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="content">
+				<div class="subscription">
+					<a href="" class="subscription__title">
+						<img src="img/Authorts/01.png" alt="">
+						<span class="subscription__text subscriptios__text ">Gussie Singleton</span>
+					</a>
+					<div class="channel-buttons">
+						<div class="channel-button channel-button-prev">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Left"></use>
+							</svg>
+						</div>
+						<div class="channel-button channel-button-next">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- *Slider main container -->
+					<div class="swiper-container channel-slider">
+						<!-- *Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- *Slides -->
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/02.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/03.png" alt="">
+										<span class="video__duration">8:00</span>
+									</div>
+									<h3 class="video__title">Selecting The Right Hotel</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">123k views</span>
+											<span class="video__date">1 months ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/04.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">Asteroids</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/05.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/06.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/01.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- *If we need navigation buttons -->
+					</div>
+				</div>
+				<div class="subscription">
+					<a href="" class="subscription__title">
+						<span class="subscription__text subscriptions-left">Recommended</span>
+					</a>
+					<div class="channel-buttons recommended-buttons">
+						<div class="channel-button recommended-button-prev">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Left"></use>
+							</svg>
+						</div>
+						<div class="channel-button recommended-button-next">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- *Slider main container -->
+					<div class="swiper-container recommended-slider">
+						<!-- *Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- *Slides -->
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb video-recommended">
+										<img class="video-size" src="img/videos/07.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb video-recommended">
+										<img class="video-size" src="img/videos/08.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb video-recommended">
+										<img class="video-size" src="img/videos/09.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- *If we need navigation buttons -->
+					</div>
+				</div>
+				<div class="subscription">
+					<a href="" class="subscription__title">
+						<img src="img/videos/food.png" alt="">
+						<span class="subscription__text subscriptios__text ">Food & Drink</span>
+						<span class="subscription-recommendend">Recommended channel for you</span>
+					</a>
+					<div class="channel-buttons">
+						<div class="channel-button food-and-drink-button-prev">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Left"></use>
+							</svg>
+						</div>
+						<div class="channel-button food-and-drink-button-next">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons/icon.svg#Right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- *Slider main container -->
+					<div class="swiper-container food-and-drink-slider">
+						<!-- *Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- *Slides -->
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/10.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/11.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/12.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/13.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/14.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video">
+									<div class="video__thumb">
+										<img src="img/videos/15.png" alt="">
+										<span class="video__duration">4:15</span>
+									</div>
+									<h3 class="video__title">A Brief History Of Creation</h3>
+									<div class="video__info">
+										<span class="video__counter">
+											<span class="video__views">80k views </span>
+											<span class="video__date">3 days ago</span>
+										</span>
+										<span class="video__channel">Dollie Blair</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- *If we need navigation buttons -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
